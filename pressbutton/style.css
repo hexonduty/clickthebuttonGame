@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.App {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Adjust the height as needed */
+  background-color: #f2f2f2; /* Set the initial background color */
+  overflow: hidden;
+  animation: backgroundAnimation 5s infinite;
+  display: flex;
+  flex-direction: column;
+  background-image: url(img/aaa92dfb8b4f18822505574280da331c.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  gap: 260px;
+  justify-content: space-around;
+}
+
+.AppButton {
+  animation-name: animateText;
+  color: #fff;
+  margin-top: 20px;
+  width: 600px;
+  height: 50px;
+  display: flex ;
+  gap: 20px;
+  font-size: 16px;
+  justify-content: space-around;
+}
+
+.AppButton #audioButton{
+  width: 200px;
+  background-color: #fff;
+  transition: all 0.5s;
+}
+
+.AppButton #audioButton:hover{
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(82,84,84,1) 0%, rgba(0,0,0,1) 100%);
+  color: #fff;
+}
+
+.AppButton .spaceButton{
+  transition: all 0.5s;
+  background-color: #3b362c;
+  color: #fff;
+}
+
+.AppButton .spaceButton:hover{
+  background-color: #fff;
+  color: #3b362c;
+}
+
+
+.AppButton .mouseButton{
+  transition: all 0.5s;
+}
+
+.AppButton .mouseButton:hover{
+  background-color: #3b362c;
+  color: #fff;
+}
+
+.AppNumber {
+  height: 20px;
+}
+
+.AppNumber .number {
+  color: #fff;
+  font-size: 56px;
+  text-align: center;
+  border: none; 
+  background-color: transparent; 
+  outline: none; 
+  width: 400px; 
+}
+
+.AppSpace .scoreButton {
+  width: 350px;
+  height: 60px;
+  background-color: #3b362c;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(102, 98, 102, 1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(102, 98, 102, 1);
+  box-shadow: 10px 10px 5px 0px rgba(102, 98, 102, 1);
+  color: #fff;
+  font-size: 20px;
+}
+
+.shake-animation {
+  animation: shake 0.3s  ;
+}
+
+@keyframes shake {
+  0%,
+	100% { 
+		transform: translateY(3px);
+    transform: translateX(3px);
+	}
+
+	10%,
+	30%,
+	50%,
+	70% {
+		transform: translateY(-55px);
+    transform: translateX(-50px);
+    transform: scale(1.6)
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: translateY(25px);
+    transform: translateX(29px);
+	}
+
+	80% {
+		transform: translateY(10px);
+    transform: translateX(16px);
+	}
+
+	90% {
+		transform: translateY(-31px);
+    transform: translateX(-24px);
+	}
+}
+
+
+@media (max-width: 769px) { .App {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Adjust the height as needed */
+  background-color: #f2f2f2; /* Set the initial background color */
+  overflow: hidden;
+  animation: backgroundAnimation 5s infinite;
+  display: flex;
+  flex-direction: column;
+  background-image: url(img/85a8a57ac8de9fa451d771c7c044ff45.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  gap: 240px;
+  justify-content: space-around;
+}
+
+
+
+.AppButton {
+  animation-name: animateText;
+  color: #fff;
+  margin-top: 20px;
+  width: 300px;
+  height: 50px;
+  display: flex ;
+  gap: 10px;
+  font-size: 11px;
+  justify-content: space-around;
+}
+
+.AppButton #audioButton{
+  width: 70px;
+}
+
+.AppButton .spaceButton{
+  font-size: 8px;
+  width: 400px;
+}
+
+.AppButton .mouseButton{
+  font-size: 8px;
+  width: 400px;
+}
+
+.AppNumber {
+  height: 20px;
+}
+
+.AppNumber .number {
+  color: #fff;
+  font-size: 36px;
+  text-align: center;
+  border: none; 
+  background-color: transparent; 
+  outline: none; 
+  width: 100px; 
+}
+
+.AppSpace .scoreButton {
+  width: 250px;
+  height: 50px;
+  background-color: #3b362c;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(102, 98, 102, 1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(102, 98, 102, 1);
+  box-shadow: 10px 10px 5px 0px rgba(102, 98, 102, 1);
+  color: #fff;
+  font-size: 20px;
+} }
+
+
+
